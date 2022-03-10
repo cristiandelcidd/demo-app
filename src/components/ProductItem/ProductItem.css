@@ -1,0 +1,14 @@
+.product-item {
+  background: white;
+  display: flex;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.product-item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.product-item img {
+  margin-right: 20px;
+}
