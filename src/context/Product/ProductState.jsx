@@ -1,15 +1,17 @@
 import { useReducer } from "react";
 
 import { products } from "../../../db/products-data.json";
+
 import ProductContext from "../Product/productContext";
 import { productReducer } from "../Product/productReducer";
+import types from "../../types";
+
+const product = JSON.parse(localStorage.getItem("product")) || [];
 
 export const ProductState = ({ children }) => {
   const {
     data: { items: productItems },
   } = products;
-
-  const product = localStorage.getItem("product") || [];
 
   const initialState = {
     productItems,
@@ -20,13 +22,13 @@ export const ProductState = ({ children }) => {
 
   const currentProduct = (projectId) => {
     dispatch({
-      type: "CURRENT_PRODUCT",
+      type: types.CURRENT_PRODUCT,
       payload: projectId,
     });
   };
 
   const resetCurrentProduct = () => {
-    dispatch({ type: "RESET_CURRENT_PROJECT" });
+    dispatch({ type: types.RESET_CURRENT_PRODUCT });
     localStorage.setItem("product", JSON.stringify({}));
   };
 

@@ -1,6 +1,8 @@
+import types from "../../types";
+
 export const productReducer = (state, action) => {
   switch (action.type) {
-    case "CURRENT_PRODUCT":
+    case types.CURRENT_PRODUCT:
       return {
         ...state,
         product: state.productItems.filter(
@@ -8,7 +10,7 @@ export const productReducer = (state, action) => {
         ),
       };
 
-    case "RESET_CURRENT_PROJECT":
+    case types.RESET_CURRENT_PRODUCT:
       return {
         ...state,
         product: null,

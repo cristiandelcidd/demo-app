@@ -1,4 +1,4 @@
-import { useContext, useEffect } from "react";
+import { useContext } from "react";
 import { Link } from "react-router-dom";
 
 import { ProductItem } from "../index";
@@ -8,7 +8,10 @@ import "./ProductDetails.css";
 const ProductDetails = () => {
   const { resetCurrentProduct, product } = useContext(productContext);
 
-  localStorage.setItem("product", JSON.stringify(product[0]));
+  localStorage.setItem(
+    "product",
+    JSON.stringify(product[0] || JSON.parse(localStorage.getItem("product")))
+  );
 
   const productItem = JSON.parse(localStorage.getItem("product"));
 

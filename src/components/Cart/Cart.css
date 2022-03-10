@@ -1,0 +1,22 @@
+.cart {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.home-button {
+  margin-bottom: 30px;
+}
+
+.cart h2 {
+  color: #fff;
+}
+
+.cart-list {
+  margin-top: 20px;
+}
+
+.cart-clean {
+  margin-top: 20px;
+}

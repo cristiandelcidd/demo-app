@@ -1,6 +1,10 @@
-const cartTypes = {
-  ADD_ITEM: "ADD_ITEM",
-  DELETE_ITEM: "DELETE_ITEM",
+const types = {
+  ADD_PRODUCT_CART: "ADD_PRODUCT_CART",
+  REMOVE_PRODUCT_CART: "REMOVE_PRODUCT_CART",
+  CLEAR_CART: "CLEAR_CART",
+
+  CURRENT_PRODUCT: "CURRENT_PRODUCT",
+  RESET_CURRENT_PRODUCT: "RESET_CURRENT_PRODUCT",
 };
 
-export default cartTypes;
+export default types;

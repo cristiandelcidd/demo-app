@@ -1,3 +1,20 @@
+.product-details {
+  width: 100%;
+}
+
+.product-details p,
 .product-details a {
+  cursor: pointer;
+}
+
+.product-details a {
+  font-size: 20px;
   text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .product-details {
+    width: 90%;
+    margin: auto;
+  }
 }

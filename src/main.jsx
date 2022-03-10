@@ -1,13 +1,17 @@
 import React from "react";
-import ReactDOM from "react-dom";
+import { render } from "react-dom";
+
 import "./index.css";
 import App from "./App";
 import { ProductState } from "./context/Product/ProductState";
+import { CartState } from "./context/Cart/CartState";
 
-ReactDOM.render(
+render(
   <React.StrictMode>
     <ProductState>
-      <App />
+      <CartState>
+        <App />
+      </CartState>
     </ProductState>
   </React.StrictMode>,
   document.getElementById("root")

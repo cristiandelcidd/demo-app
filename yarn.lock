@@ -622,6 +622,11 @@ react-dom@^17.0.2:
     object-assign "^4.1.1"
     scheduler "^0.20.2"
 
+react-icons@^4.3.1:
+  version "4.3.1"
+  resolved "https://registry.yarnpkg.com/react-icons/-/react-icons-4.3.1.tgz#2fa92aebbbc71f43d2db2ed1aed07361124e91ca"
+  integrity sha512-cB10MXLTs3gVuXimblAdI71jrJx8njrJZmNMEMC+sQu5B/BIOmlsAjskdqpn81y8UBVEGuHODd7/ci5DvoSzTQ==
+
 react-refresh@^0.11.0:
   version "0.11.0"
   resolved "https://registry.yarnpkg.com/react-refresh/-/react-refresh-0.11.0.tgz#77198b944733f0f1f1a90e791de4541f9f074046"
@@ -715,6 +720,11 @@ to-fast-properties@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/to-fast-properties/-/to-fast-properties-2.0.0.tgz#dc5e698cbd079265bc73e0377681a4e4e83f616e"
   integrity sha1-3F5pjL0HkmW8c+A3doGk5Og/YW4=
+
+toastify-js@^1.11.2:
+  version "1.11.2"
+  resolved "https://registry.yarnpkg.com/toastify-js/-/toastify-js-1.11.2.tgz#5c66cb05cee30b09e5bd8961ab809e41a3ce716c"
+  integrity sha512-bMBNKhZLPX/sDhpwM7KHIRUTtqCylQeoZDiEWy5zE7iDUJ92XmP8AKgDAp9rXx6pR5GXGFtQHHoH62toahbHgQ==
 
 vite@^2.8.0:
   version "2.8.6"
